@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diego's Project</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+
+<script src="https://cdn.staticfile.net/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(".Tt").css("color","black");
+$(document).ready(function(){
+    $(".Tt").click(function(){
+        var CFS = $(".Tt").css("font-size");
+        var CCFS = parseFloat(CFS);
+        var AFS = CCFS*1.1;
+        $(".Tt").css("font-size",AFS);
+    });
+    $(".Tt").mouseenter(function(){
+        $(".Tt").css("color","blue");
+    });
+    $(".Tt").mouseleave(function(){
+        $(".Tt").css("color","black");
+    });
+});
+</script>
+
+<h1>Hi!</h1>
+<p>你可以試著點擊以下文字</p>
+
+<p class="Tt">Click Me</p>
+
+</body>
+</html>
